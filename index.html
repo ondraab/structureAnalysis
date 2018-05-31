@@ -1,0 +1,67 @@
+<html>
+    <head>
+		<!-- demo css -->
+		<style>
+		code {
+			padding: 2px 4px;
+			font-size: 90%;
+			color: #c7254e;
+			background-color: #f9f2f4;
+			border-radius: 4px;
+		}
+		</style>
+		
+		<!-- AngularJS dependency library files -->
+		<script src="./bower_components/angular/angular.min.js"></script>
+		
+		<!-- PDB LiteMol script & CSS -->
+		<link rel="stylesheet" href="./build/pdb.litemol.min.css" />
+		<link href="./examples/build/static/css/main.fa05a836.css" rel="stylesheet">
+		<script src="./build/pdb.litemol.min.js"></script>
+
+		<script src="./bower_components/d3/d3.min.js"></script>
+		
+		<!-- PDB Sequence Viewer CSS and script -->
+		<link rel="stylesheet" href="./build/pdb.topology.viewer.min.css" />
+		<script src="./build/pdb.topology.viewer.min.js"></script>
+		
+		
+		<!-- 
+		If you are developing a non-angularJs Application, 
+		bootstrap pdb.litemol' module as show below
+		-->
+		<script>
+		(function () {
+			'use strict';
+			angular.element(document).ready(function () {
+				angular.bootstrap(document, ['pdb.litemol']);
+			});
+		}());
+		</script>
+				<script>
+					(function () {
+						'use strict';
+						angular.element(document).ready(function () {
+							angular.bootstrap(document, ['pdb.topology.viewer']);
+						});	
+					}());
+					</script>
+		
+    </head>
+    <body>
+		<div style="margin:20px 0 20px 20px">
+
+			<div style="float:left;position:relative;height:400px;width:500px;">
+				<pdb-lite-mol pdb-id="'1cbs'" load-ed-maps="true"></pdb-lite-mol>
+			</div>
+		</div>
+		<div>
+			<pdb-topology-viewer entry-id="1cbs" entity-id="1" height="325" width="400"></pdb-topology-viewer>
+		</div>
+		<div id="rama-root" style="padding-left: 550px"></div>
+		<script type="text/javascript" src="./examples/build/static/js/main.abebd91a.js"></script>
+		<script>
+		</script>
+	</script>
+	</body>
+</html>
