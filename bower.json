@@ -1,22 +1,15 @@
 {
-  "name": "pdb-lite-mol",
+  "name": "struct-analysis",
+  "description": "..",
   "main": "index.js",
-  "version": "0.1.0",
   "authors": [
-    "Mandar Deshpande <mandar@ebi.ac.uk>"
+    "Ondrej Balcarek"
   ],
-  "description": "Web-component implementation of LiteMol 3D structure viewer.",
-  "moduleType": [
-    "globals",
-	"node"
-  ],
-  "keywords": ["BioJS", "PDB component", "PDB LiteMol", "3D Viewer", "WebGL", "PDBe", "electron density view", "AngularJS"],
   "license": "Apache-2.0",
-  "homepage": "http://www.ebi.ac.uk/pdbe/pdb-component-library/doc.html#a_LiteMol",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mandarsd/pdb-lite-mol.git"
-  },
+  "keywords": [
+    ".."
+  ],
+  "homepage": "https://github.com/ondraab/structureAnalysis",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -25,7 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.4.7",
-    "d3": "3.5.3"
+    "d3": "3.5.3",
+    "angular": "1.4.7"
   }
 }

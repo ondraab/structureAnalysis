@@ -34,11 +34,11 @@
 		(function () {
 			'use strict';
 			angular.element(document).ready(function () {
-				angular.bootstrap(document, ['pdb.litemol']);
+				angular.bootstrap(document, ['pdb.topology.viewer', 'pdb.litemol']);
 			});
 		}());
 		</script>
-				<script>
+				<!-- <script>
 					(function () {
 						'use strict';
 						angular.element(document).ready(function () {
@@ -46,19 +46,20 @@
 						});	
 					}());
 					</script>
-		
+		 -->
     </head>
     <body>
-		<div style="margin:20px 0 20px 20px">
+			<div id="rama-root"></div>
+		<div style="padding: 20px 0 0 600px">
 
-			<div style="float:left;position:relative;height:400px;width:500px;">
+			<div style="float:left;position:relative;height:400px;width:500px;padding-right: 20px">
 				<pdb-lite-mol pdb-id="'1cbs'" load-ed-maps="true"></pdb-lite-mol>
 			</div>
 		</div>
 		<div>
 			<pdb-topology-viewer entry-id="1cbs" entity-id="1" height="325" width="400"></pdb-topology-viewer>
+
 		</div>
-		<div id="rama-root" style="padding-left: 550px"></div>
 		<script type="text/javascript" src="./examples/build/static/js/main.abebd91a.js"></script>
 		<script>
 		</script>
